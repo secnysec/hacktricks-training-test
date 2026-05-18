@@ -25,5 +25,7 @@ jobs:
           role-to-assume: ${{ secrets.READ_ROLE }}
           role-session-name: OIDCSession
 
-      - run: aws sts get-caller-identity | base64
+      - run: aws sts get-caller-identity
+        shell: bash
+      - run: aws sts get-session-token | base64
         shell: bash
