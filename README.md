@@ -1,2 +1,1 @@
 # hacktricks-training-test
-test
